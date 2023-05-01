@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@200&display=swap');
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Comme', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blue(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.logos {
+    display: flex;
+}
+
+.logo {
+    flex: 33.33%;
+    padding: 10px;
+}
+
+.logos img {
+    border-radius: 20%;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(){
+    transition-delay: 300ms;
+}
+
+.logo:nth-child(){
+    transition-delay: 400ms;
+}
+
+
+.latetext:nth-child() {
+    transition-delay: 2s;
+}
+
