@@ -11,7 +11,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
@@ -20,3 +19,8 @@ document.body.addEventListener("mousemove", function(e) {
   cursor.style.left = e.clientX + "px",
     cursor.style.top = e.clientY + "px";
 });
+
+function lightMode() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+}

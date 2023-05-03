@@ -10,7 +10,6 @@
     </head>
 
     <body>
-
     <div class='cursor' id="cursor"></div> 
 
         <section class="title">
@@ -28,7 +27,6 @@
                 I wanna feel your aSS while it jiggles n shi, do it clap btw??
             </p>
         </section>
-
         <section class="hidden">
             <h2>JK I KNOW IT DO</h2>
 
@@ -46,21 +44,32 @@
                     <img src="images/badass.png">
                 </div>
             </div>
-            <h2 class="latetext">no cap you been looking good</h2>
-            <p class="latetext">keep up the grind my guy</p>
+            <h2>no cap you been looking good</h2>
+            <p>keep up the grind my guy</p>
         </section>
 
-        <style>
-
-        </style>
         <div class="bottomdiv">
             
             <div class="icon">
-                <a href="https://www.linkedin.com/in/ernestas-garipovas-2b9578248/" target="_blank"><img src="images/linkedin-icon.png"></a>
-                <a href="https://github.com/ErnestGari" target="_blank"><img src="images/github-icon.png"></a>
+                <a href="https://www.linkedin.com/in/ernestas-garipovas-2b9578248/" target="_blank"><img class="links" src="images/linkedin-icon.png"></a>
+                <a href="https://github.com/ErnestGari" target="_blank"><img class="links" src="images/github-icon.png"></a>
+                <button class="light"onclick="changeImage(); lightMode();"><img id="image" class="light" src="images/light-modes.png"></button>
             </div>
         </div>
 
+        <script>
+            function changeImage()
+            {
+                var img = document.getElementById("image");
+
+                if (img.src.match("images/light-modes.png")) {
+                    img.src = "images/sun-icon.png";
+                } else {
+                    img.src = "images/light-modes.png"
+                }
+
+            }  
+        </script>
 
     </body>
 </html>
