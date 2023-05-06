@@ -38,6 +38,7 @@ main {
 }
 
 
+
 .logo {
     font-weight: bold;
     text-transform: uppercase;
@@ -60,7 +61,7 @@ main {
   display: inline;
   position: absolute;
   left: -999px;
-  transition: var(--transition-speed);
+  transition: 600ms ease;
 }
 
 .navbar:hover .logo svg {
@@ -71,6 +72,7 @@ main {
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 200ms ease;
+    z-index: 9999;
 }
 
 .navbar-nav {
@@ -95,6 +97,19 @@ main {
     display: flex;
     align-items: center;
     height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background: transparent;
+    border: none;
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
@@ -265,42 +280,6 @@ section {
 
 }
 
-.bottomdiv {
-    background: #000000cb;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 1%;
-}
-
-.icon {
-    button {
-        background-color: transparent;
-        border: none;
-        .light {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        margin: 10px;
-        right: 150%;
-        }
-    }
-    .links{
-        position: relative;
-        width: 30px;
-        height: 30px;
-        margin-right: 15px;
-        margin: 10px;
-        left: 85%;
-    }
-
-
-    
-    
-}
-
 @media only screen and (max-width: 600px) {
     .navbar {
       bottom: 0;
@@ -338,6 +317,7 @@ section {
   
     .navbar:hover .link-text {
       display: inline;
+      transition: var(--transition-speed);
     }
   
     .navbar:hover .logo svg
@@ -347,8 +327,9 @@ section {
   
     .navbar:hover .logo-text
     {
-        margin-left: 10%;
+      margin-left: 10%;
       left: 0px;
+      transition: 600ms ease;
     }
   }
   
@@ -371,7 +352,7 @@ section {
     --text-secondary: #35535c;
     --bg-primary: #fdf6e3;
     --bg-secondary: #f5e5b8;
-  }
+}
   
   .theme-icon {
     display: none;
@@ -388,3 +369,4 @@ section {
   .solar #solarIcon {
     display: block;
   }
+  

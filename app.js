@@ -22,4 +22,5 @@ document.body.addEventListener("mousemove", function(e) {
 function lightMode() {
     var element = document.body;
     element.classList.toggle("light-mode");
+    element.classList.toggle("light");
 }
