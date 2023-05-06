@@ -13,8 +13,8 @@ $bck: #131316;
     --transition-speed: 600ms;
 }
 body {
-    background-color: $bck;
-    color: $bone;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
     font-family: 'Comme', sans-serif;
     padding: 0;
     margin: 0;
@@ -26,11 +26,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: $bck;
+    background: var(--bg-secondary);
 }
 
 body::-webkit-scrollbar-thumb {
-    background: $bone;
+    background: var(--text-secondary);
 }
 main {
     margin-left: 5rem;
@@ -164,7 +164,6 @@ h3::selection {
 }
 
 .light-mode {
-    background-color: $bone;
     color: $bck;
 
         h3::selection{
@@ -257,8 +256,10 @@ section {
     }
 }
 
+
 .logos {
     display: flex;
+    background-color: transparent;
 
     img {
         border-radius: 20%;
