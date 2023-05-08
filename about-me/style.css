@@ -244,6 +244,9 @@ section {
   transform: translateX(-100%);
   transition: all 1s;
 }
+.hidden img {
+  border-radius: 30%;
+}
 
 .show {
   opacity: 1;
@@ -256,27 +259,6 @@ section {
     transition: none;
   }
 }
-.logos {
-  display: flex;
-  background-color: transparent;
-}
-.logos img {
-  border-radius: 20%;
-}
-.logos .logo {
-  flex: 33.33%;
-  padding: 10px;
-}
-.logos .logo:nth-child(2) {
-  transition-delay: 100ms;
-}
-.logos .logo:nth-child(n) {
-  transition-delay: 200ms;
-}
-.logos .logo:nth-child(n) {
-  transition-delay: 300ms;
-}
-
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
