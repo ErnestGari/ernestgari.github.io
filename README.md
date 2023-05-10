@@ -1,3 +1,3 @@
 # ernestgari.github.io
 
-just a fun project to experiment with new stuff and ideas
+My new website to explore html scss and javascript, basically just an experimental website.
